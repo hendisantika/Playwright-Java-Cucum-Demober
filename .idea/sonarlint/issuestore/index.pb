@@ -10,3 +10,5 @@ i
 9src/test/java/com/hendisantika/stepdefinitions/Steps.java,b/7/b780bfb18dd2e563f2e96bd4421881b83b2c9e6d
 b
 2src/test/java/com/hendisantika/pages/BasePage.java,6/5/6553bc483ea7ddcc6ad5c04ee058de1d6422b3a9
+f
+6src/test/java/com/hendisantika/pages/CheckoutPage.java,0/1/016e43728ca460667341b967a6ce18fc8ec33ba6
