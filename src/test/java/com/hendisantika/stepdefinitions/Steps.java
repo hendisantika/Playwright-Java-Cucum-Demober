@@ -5,6 +5,8 @@ import com.hendisantika.pages.CheckoutPage;
 import com.hendisantika.pages.ItemsPage;
 import com.hendisantika.pages.LoginPage;
 import com.microsoft.playwright.Page;
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -75,5 +77,15 @@ public class Steps extends BasePage {
     @Then("User should get the Confirmation of Order")
     public void user_should_get_the_Confirmation_of_Order() {
         checkoutPage.checkoutSuccessful();
+    }
+
+    @After
+    public void tearDown(Scenario scenario) {
+        if (browser != null) {
+            browser.close();
+        }
+        if (page != null) {
+            page.close();
+        }
     }
 }
