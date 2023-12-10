@@ -5,6 +5,7 @@ import com.hendisantika.pages.CheckoutPage;
 import com.hendisantika.pages.ItemsPage;
 import com.hendisantika.pages.LoginPage;
 import com.microsoft.playwright.Page;
+import io.cucumber.java.en.Given;
 
 /**
  * Created by IntelliJ IDEA.
@@ -24,4 +25,18 @@ public class Steps extends BasePage {
     private CheckoutPage checkoutPage;
 
     private Page page;
+
+    @Given("^User launched SwagLabs application$")
+    public void user_launched_swaglabs_application() {
+        try {
+            page = createPlaywrightPageInstance(System.getProperty("browser"));
+            page.navigate(System.getProperty("applicationUrl"));
+            loginPage = new LoginPage(page);
+            itemsPage = new ItemsPage(page);
+            checkoutPage = new CheckoutPage(page);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
