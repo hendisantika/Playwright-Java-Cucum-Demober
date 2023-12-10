@@ -56,4 +56,9 @@ public class Steps extends BasePage {
     public void logInFailed() {
         loginPage.loginFailed();
     }
+
+    @When("User adds {string} product to the cart")
+    public void user_adds_product_to_the_cart(String product) {
+        itemsPage.orderProduct(product);
+    }
 }
