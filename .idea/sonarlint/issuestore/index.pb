@@ -16,3 +16,5 @@ c
 3src/test/java/com/hendisantika/pages/ItemsPage.java,2/f/2fb9bdc9b86df5c460b21a600dfdf25f2ab9a015
 c
 3src/test/java/com/hendisantika/pages/LoginPage.java,6/1/616761dfd30fffd71ffcf7e66be2c0fe909e4cc5
+e
+5src/test/java/com/hendisantika/runner/TestRunner.java,3/8/3804c2d591ed47e17d24d13044e005f792d03369
