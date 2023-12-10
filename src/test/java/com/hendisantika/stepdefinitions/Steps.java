@@ -61,4 +61,9 @@ public class Steps extends BasePage {
     public void user_adds_product_to_the_cart(String product) {
         itemsPage.orderProduct(product);
     }
+
+    @When("User enters Checkout details with {string}, {string}, {string}")
+    public void user_enters_Checkout_details_with(String FirstName, String LastName, String Zipcode) {
+        checkoutPage.fillCheckoutDetails(FirstName, LastName, Zipcode);
+    }
 }
