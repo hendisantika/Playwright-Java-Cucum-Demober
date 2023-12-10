@@ -6,6 +6,7 @@ import com.hendisantika.pages.ItemsPage;
 import com.hendisantika.pages.LoginPage;
 import com.microsoft.playwright.Page;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 /**
@@ -44,5 +45,10 @@ public class Steps extends BasePage {
     @When("User logged in the app using username {string} and password {string}")
     public void user_logged_in_the_app_using_username_and_password(String username, String password) {
         loginPage.login(username, password);
+    }
+
+    @Then("^user should be able to log in$")
+    public void logInSuccessful() {
+        itemsPage.loginSuccessful();
     }
 }
