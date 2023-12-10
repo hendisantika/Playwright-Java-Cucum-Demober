@@ -12,3 +12,5 @@ b
 2src/test/java/com/hendisantika/pages/BasePage.java,6/5/6553bc483ea7ddcc6ad5c04ee058de1d6422b3a9
 f
 6src/test/java/com/hendisantika/pages/CheckoutPage.java,0/1/016e43728ca460667341b967a6ce18fc8ec33ba6
+c
+3src/test/java/com/hendisantika/pages/ItemsPage.java,2/f/2fb9bdc9b86df5c460b21a600dfdf25f2ab9a015
