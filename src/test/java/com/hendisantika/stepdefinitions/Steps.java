@@ -51,4 +51,9 @@ public class Steps extends BasePage {
     public void logInSuccessful() {
         itemsPage.loginSuccessful();
     }
+
+    @Then("^User should not get logged in$")
+    public void logInFailed() {
+        loginPage.loginFailed();
+    }
 }
