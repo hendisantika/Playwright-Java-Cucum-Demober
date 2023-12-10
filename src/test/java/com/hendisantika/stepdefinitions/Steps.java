@@ -66,4 +66,9 @@ public class Steps extends BasePage {
     public void user_enters_Checkout_details_with(String FirstName, String LastName, String Zipcode) {
         checkoutPage.fillCheckoutDetails(FirstName, LastName, Zipcode);
     }
+
+    @When("User completes Checkout process")
+    public void user_completes_checkout_process() {
+        checkoutPage.completeCheckout();
+    }
 }
