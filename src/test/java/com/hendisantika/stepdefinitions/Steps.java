@@ -71,4 +71,9 @@ public class Steps extends BasePage {
     public void user_completes_checkout_process() {
         checkoutPage.completeCheckout();
     }
+
+    @Then("User should get the Confirmation of Order")
+    public void user_should_get_the_Confirmation_of_Order() {
+        checkoutPage.checkoutSuccessful();
+    }
 }
