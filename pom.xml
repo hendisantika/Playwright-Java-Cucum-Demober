@@ -29,7 +29,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.27.1</version>
+            <version>7.27.2</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
